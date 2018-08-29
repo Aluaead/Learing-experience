@@ -1,0 +1,384 @@
+body {
+  background: #f8f8f8;
+  color: #606060;
+  font-family: "Proxima", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  position: relative;
+}
+
+html,
+body {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  overflow-x: hidden;
+  text-align: center;
+  vertical-align: middle;
+}
+
+p {
+  letter-spacing: 1px;
+  line-height: 28px;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Proxima Bold";
+  font-weight: bold;
+}
+
+h1 {
+  font-size: 60px;
+}
+
+h2 {
+  font-size: 48px;
+}
+
+h3 {
+  font-size: 30px;
+}
+
+h4 {
+  font-size: 24px;
+}
+
+h5 {
+  font-size: 18px;
+}
+
+h6 {
+  font-size: 16px;
+}
+
+hr {
+  border-color: #e0e0e0;
+  margin: 0 auto 20px auto;
+  width: 100px !important;
+}
+
+*a:hover {
+  text-decoration: none;
+}
+
+/* @font-face {
+  font-family: "Proxima";
+  src: url(../fonts/ProximaNova-Regular.otf);
+}
+
+@font-face {
+  font-family: "Proxima Bold";
+  src: url(../fonts/ProximaNova-Bold.otf);
+} */
+.title {
+  padding-bottom: 40px;
+  text-align: center;
+  font-weight: bold;
+}
+
+.title h2 {
+  color: #202020;
+  line-height: 20px;
+  padding-bottom: 30px;
+}
+
+.title p {
+  padding-top: 14px;
+  padding-bottom: 30px;
+}
+
+@media (max-width: 768px) {
+  .title h2 {
+    font-size: 24px;
+  }
+}
+
+/*幻灯片*/
+#home {
+  background: url("../images/home-bg.jpg") 50% 0 repeat-y fixed;
+  color: #ffffff;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  height: 100vh;
+  text-align: center;
+}
+
+#home .btn {
+  background: #eb5424;
+  border-radius: 4px;
+  border: none;
+  color: #ffffff;
+  font-size: 16px;
+  padding: 20px 40px;
+  margin-top: 60px;
+}
+
+#home .btn:hover {
+  background: #ffffff;
+  color: #eb5424;
+  transition: all 0.4s ease-in-out;
+}
+
+/*导航栏*/
+.navbar-default .navbar-brand {
+  font-size: 36px;
+  font-weight: bold;
+  margin: 0;
+}
+
+.navbar-default .navbar-nav li a {
+  color: #606060;
+  font-weight: bold;
+  padding-right: 20px;
+  padding-left: 20px;
+}
+
+.navbar-default .navbar-nav li a:hover {
+  color: #606060;
+}
+
+/*介绍*/
+#intro {
+  padding-top: 180px;
+  padding-bottom: 140px;
+}
+
+#intro h4 {
+  padding-bottom: 16px;
+}
+
+/*服务*/
+#work {
+  background-color: #ffffff;
+}
+
+#work>.container {
+  width: 100%;
+  padding: 0;
+  margin: 0;
+  text-align: center;
+}
+
+#work .title {
+  padding: 100px 60px 60px 60px;
+}
+
+#work .bg-black {
+  background-color: #303030;
+  color: #ffffff;
+  height: 50%;
+}
+
+#work .bg-red {
+  background-color: #eb5424;
+  color: #ffffff;
+}
+
+#work h3 {
+  padding-bottom: 60px;
+}
+
+#work .fa {
+  color: #ffffff;
+  cursor: pointer;
+  font-size: 40px;
+  width: 100px;
+  height: 100px;
+  line-height: 100px;
+  text-align: center;
+  transition: all 0.4s ease-in-out;
+  margin-top: 40px;
+}
+
+#work .fa:hover {
+  background-color: #ffffff;
+  border-radius: 50%;
+  color: #303030;
+}
+
+/*风格*/
+#team {
+  background: #202020 url("../images/team-bg.jpg") 50% 0 repeat-y fixed;
+  color: #ffffff;
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+
+#team h2 {
+  color: #ffffff;
+  font-size: 48px;
+}
+
+#team img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* 作品 */
+#portfolio {
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+
+#portfolio h2 {
+  color: #1f1f1f;
+  font-size: 48px;
+  line-height: 20px;
+}
+
+#portfolio h3 {
+  color: #eb5424;
+  padding-bottom: 60px;
+}
+
+#portfolio a {
+  text-decoration: none;
+}
+
+#portfolio img {
+  border-radius: 1px;
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+  opacity: 0.8;
+  margin-bottom: 34px;
+  opacity: 0.6;
+  transition: all 0.4s ease-in-out;
+}
+
+#portfolio img:hover {
+  opacity: 0.9;
+  transform: scale(1.1);
+}
+
+/*套餐*/
+#price {
+  background: #ffffff;
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+
+#price .plan {
+  background: #eb5525;
+  color: #ffffff;
+  padding: 0 0 60px 0;
+}
+
+#price .plan .plan_title {
+  background-color: #f6f6f6;
+  color: #212121;
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+
+#price .plan .plan_sub_title {
+  padding: 30px;
+  border-bottom: 1px solid #ffffff;
+}
+
+#price .plan ul {
+  padding: 0;
+}
+
+#price .plan ul li {
+  display: block;
+  font-family: "Proxima";
+  font-size: 16px;
+  padding: 25px 0 10px 0;
+}
+
+#price .plan .btn {
+  background: #ffffff;
+  border: none;
+  border-radius: 0px;
+  color: #212121;
+  font-size: 16px;
+  font-weight: bold;
+  padding: 20px 40px;
+  transition: all 0.4s ease-in-out;
+  margin-top: 20px;
+}
+
+#price .plan .btn:hover {
+  background: #202020;
+  color: #ffffff;
+}
+
+/* 联系 */
+#contact {
+  background: #f6f6f6 url('../images/contact-bg.jpg') 50% 0 repeat-y fixed;
+  color: #ffffff;
+  padding-top: 100px;
+  padding-bottom: 80px;
+}
+
+#contact h2 {
+  color: #ffffff;
+}
+
+#contact .form-control {
+  border-radius: 4px;
+  border: none;
+  box-shadow: none;
+  margin-top: 12px;
+  margin-bottom: 14px;
+}
+
+#contact input {
+  height: 50px;
+}
+
+#contact input[type='submit'] {
+  background-color: #eb5525;
+  color: #ffffff;
+  height: 60px;
+  font-weight: bold;
+  transition: all 0.4s ease-in-out;
+}
+
+#contact input[type='submit']:hover {
+  background-color: #202020;
+}
+/*底部*/
+footer{
+  position: relative;
+  background:#202020;
+  color: #ffffff;
+}
+footer h2{
+  padding-top: 40px;
+  padding-bottom:40px;
+}
+footer p {
+  line-height: 20px;
+  text-align: left;
+}
+footer img{
+  width: 100px;
+  height: 100px;
+}
+footer .container{
+  padding-top: 40px;
+}
+.container a{padding: 10px;font-size: 20px;color: #eb5424;}
+.container p{margin: 0;}
+.company{
+  font-size: 24px;
+  color: #FFFFFF;
+  padding-left: 10px;
+}
+.wx{
+  text-align: center;
+  padding-top: 10px;
+}
+
